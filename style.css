@@ -1,0 +1,316 @@
+*{
+    margin:0 ;
+    padding: 0;
+    font-family: 'sans-serif';
+}
+/*landing page css */
+.layout{
+    width: 100%;
+    height: 100vh;
+    background: url(./pic.png);
+    background-position: center;
+    background-size: cover;  
+}
+.navigation-bar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding-right: 8%;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white ;
+    font-size: 17px;
+}
+.nav-link{
+    padding: 10px 30px;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.nav-link:not(:first-of-type){
+    background-color: #17375b;
+    transition: transform .3s;
+}
+.nav-link:not(:first-of-type):hover{
+    background-color: #4475e2;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+.text-content{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    color: white;
+    padding-left: 8%;
+}
+.p-content{
+    flex-basis: 50%;
+   
+}
+h1{
+    color: rgb(248, 147, 47);
+    font-size: 50px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+}
+.text-content button{
+    width: 180px;
+    color: white;
+    font-size: 20px;
+    padding: 15px 45px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    transition: transform .3s;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.text-content .button1:hover{
+    background-color: #4475e2;
+    transform: translateY(5px);
+}
+.text-content .button1{
+    background: #17375b;
+}
+.text-content .button2:hover{
+    background: #4475e2;
+    color:white ;
+    transform: translateY(5px);
+}
+.text-content .button2{
+    border: 2px solid #4475e2;
+    margin-left: 10px;
+    color: #4475e2;
+}
+#a{ 
+    text-decoration: none;
+    color:white ;
+}
+/*login page css */
+.main{
+    height: 100%;
+    width: 100%;
+    background: url(./Picture1.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form{
+    width: 290px ;
+    height:400px ;
+    margin: 6% auto;
+    position:relative ;
+    background: transparent;
+    box-shadow: 0 15px 25px rgb(248, 147, 47);
+    padding: 5%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #fe82511f;
+    border-radius: 30px;
+}
+.btn3{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+    font-size: 15px;
+}
+.a1{
+    text-decoration: none;
+    color:white ;
+
+
+}
+#btn2{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background:  rgb(248, 147, 47);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-media-logo{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-media-logo img {
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d ;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 240px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-filed{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+.submit-button{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: 0 0 0 50px;
+    background: rgb(248, 147, 47);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#signup{
+    left: 450px;
+}
+/*exam registration form css */
+.reg-main{
+    height: 100%;
+    width: 100%;
+    background: url(./Picture8.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    color: transparent;
+}
+.reg-form{
+    width: 400px ;
+    height:450px ;
+    margin: 6% auto;
+    position:relative ;
+    background: transparent;
+    box-shadow:  0 15px 25px rgb(248, 147, 47);
+    padding: 5%;
+   
+    border-radius: 10px;
+    
+}
+.reg-form h9{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 15%;
+}
+.reg-input-group{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+   margin-left: 10%;
+
+}
+.reg-input-filed{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: rgb(250, 250, 250);
+    color: black;
+}
+.reg-submit-button{
+    width: 70%;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: 0 0 0 50px;
+    background: rgb(248, 147, 47);
+    border: 0;
+    outline: none;
+    margin-top: 15%;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+/*question display page css */
+.q-main{
+    height: 100%;
+    width: 100%;
+    background-image: url(./Picture-q.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    color: transparent;
+}
+.q-form{
+    width: 400px ;
+    height:150px ;
+    margin: 15% auto;
+    position:relative ;
+    background: #17375b;
+    box-shadow:  0 15px 25px rgb(248, 147, 47);
+    padding: 5%;
+    color: white;
+    border-radius: 10px;
+    
+}
+.question-content{
+    display: none;
+    margin-top:1%;
+    font-size: 20px;
+    align-items: center;    
+}
+button4{
+    margin-top: 20px;
+    margin-left: 70%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: rgb(248, 147, 47);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+}

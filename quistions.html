@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quistions page</title>
+    <link rel=" stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="q-main">
+        <div class="q-form">
+            <div class="question-content">
+                Q1. What does HTML stand for??<br>
+                <input type="radio" name="qusetio-1" id="correct1">Hyper Text Markup Language<br>
+                <input type="radio" name="qusetio-1" >How to Make Lasagna<br>
+                <input type="radio" name="qusetio-1" >Hot Mail<br>
+                <button4 class="next" onclick="next(1)">Next</button>
+            </div>
+            <div class="question-content">
+                Q2. Where is the meta tag only found?<br>
+                <input type="radio" name="qusetio-2" >The last page<br>
+                <input type="radio" name="qusetio-2" id="correct2">The home page<br>
+                <input type="radio" name="qusetio-2" >the second page<br>
+                <button4 class="next" onclick="next(2)">Next</button>
+               
+            </div>
+            <div class="question-content">
+                Q3. What should values always be enclosed in?<br>
+                <input type="radio" name="qusetio-3" id="correct3">Quotation marks<br>
+                <input type="radio" name="qusetio-3" >commas<br>
+                <input type="radio" name="qusetio-3" >Parenthesis<br>
+                <button4 onclick="result()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName('question-content')[0].style.display ="block";
+        function next(id){
+            document.getElementsByClassName('question-content')[id-1].style.display ="none";
+            document.getElementsByClassName('question-content')[id].style.display ="block";
+        }
+        function result(){
+            var score=0;
+            if(document.getElementById('correct1').checked)
+            {
+                score++;
+            }
+            if(document.getElementById('correct2').checked)
+            {
+                score++;
+            }
+            if(document.getElementById('correct3').checked)
+            {
+                score++;
+            }
+
+            document.write("you got: "+score+" answers correct")
+            document.bgColor="#17375b"
+            document.fgColor="white"
+            document.fonts='bold'
+        }
+    </script>
+</body>
+</html>
